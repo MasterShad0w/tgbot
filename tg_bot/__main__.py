@@ -19,17 +19,27 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 
-ഹായ് {}, എന്റെ പേര് {}! ഞാൻ [ഇദ്ദേഹം](tg://user?id={}) നോക്കി നടത്തുന്ന ഒരു അടിപൊളി അഡ്മിൻ ബോട്ടാണ്.
+Hello👋 {}, I am {}! My creator is [🥷Shadow King🥷](t.me/ShadowKing9o).
 
-എന്നെ നിർമ്മിച്ചിരിക്കുന്നത് python3 യിൽ python-telegram-bot ലൈബ്രറി ഉപയോഗിച്ചാണ്. ഞാൻ പൂർണ്ണമായിട്ടും ഓപ്പൺസോഴ്സ്ഡ് ആണ്. എന്റെ കോഡ് നിങ്ങൾക്ക് [ഇവിടെ](https://github.com/jithumon/tgbot) കാണുവാൻ സാധിക്കും.
+I am an Advance Group Manager bot built on python3 using the python-telegram-bot library. 
 
-എന്നെപ്പോലെ ഒരു അഡ്മിൻ ബോട്ടിനെ ഉണ്ടാക്കുവാൻ താഴെ കൊടുത്തിരിക്കുന്ന വീഡിയോ കാണുക.
+My some special features mention below👇👇
 
-എന്റെ അപ്ഡേറ്റുകളെക്കുറിച്ചും പ്രവർത്തനത്തെപറ്റിയും അറിയുവാൻ അപ്ഡേറ്റ് ചാനൽ സബ്സ്ക്രൈബ് ചെയ്യുക.
+1.User's iD & information. 
+2.Manual Filters. 
+3.Stickers Info. 
+4.Log Channels. 
+5.Blacklists.
+6.Greetings.
+7.Notes.
+8.Bans.
+And many more.....
 
-കൂടെ താഴെ കൊടുത്തിരിക്കുന്ന ടെക് ഗെയിമിംഗ് യൂട്യൂബ് ചാനൽ സബ്സ്ക്രൈബ് ചെയ്യാനും മറക്കേണ്ട.
+Subscribe Support channel to get updates and solutions regarding any Bot. 
 
-ലഭ്യമായ കമാന്റുകളെപ്പറ്റി അറിയുവാൻ /help അമർത്തുക.
+Also don't forget to subscribe YouTube channel to get brilliant tutorials. 
+
+Press /help to learn about available commands.
 
 """
 
@@ -53,7 +63,7 @@ DONATE_STRING = """Heya, glad to hear you want to donate!
 It took lots of work for [my creator](t.me/SonOfLars) to get me to where I am now, and every donation helps \
 motivate him to make me even better. All the donation money will go to a better VPS to host me, and/or beer \
 (see his bio!). He's just a poor student, so every little helps!
-There are two ways of paying him; [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
+You can pay him by contacting himself; [🥷SHADOW KING🥷](t.me/ShadowKing9o)."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -150,12 +160,12 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
 
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="🎉 Add me to your group", url="t.me/{}?startgroup=true".format(bot.username)),  InlineKeyboardButton(text="🤖 Make Own Admin Bot", url="https://youtu.be/W6CLKrehy6w")],
-                     [InlineKeyboardButton(text="👥 Support Group", url="https://t.me/KeralaBots"), InlineKeyboardButton(text="🔔 Update Channel", url="https://t.me/KochuUpdates")],
-                     [InlineKeyboardButton(text="🎬 Youtube Channel", url="https://www.youtube.com/stealthtechnogaming?sub_confirmation=1"), InlineKeyboardButton(text="🛠 Help", url="https://t.me/{}?start=help".format(bot.username)) ]]))
+                    [[InlineKeyboardButton(text="➕Add me to your group➕", url="t.me/{}?startgroup=true".format(bot.username)),  InlineKeyboardButton(text="🤖Make Own Admin Bot🤖", url="https://youtu.be/W6CLKrehy6w")],
+                     [InlineKeyboardButton(text="👨‍💻Support Group👩‍💻", url="https://t.me/ShadowsArena"), InlineKeyboardButton(text="🎥Movie Adda🎥", url="https://t.me/+9Zhp_GdQVctiNjc1")],
+                     [InlineKeyboardButton(text="🎬Youtube Channel🎬", url="https://youtube.com/channel/UCqVIzF-2AhO_pY4uo8Rr5Hg"), InlineKeyboardButton(text="🛠Help🛠", url="https://t.me/{}?start=help".format(bot.username)) ]]))
 
     else:
-        update.effective_message.reply_text("ചത്തിട്ടില്ലാ...")
+        update.effective_message.reply_text("Not Dead...")
 
 
 # for test purposes
