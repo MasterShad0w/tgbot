@@ -160,7 +160,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
 
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="➕Add me to your group➕", url="t.me/{}?startgroup=true".format(bot.username)),  InlineKeyboardButton(text="🤖Make Own Admin Bot🤖", url="https://youtu.be/W6CLKrehy6w")],
+                    [[InlineKeyboardButton(text="➕Add me to your group➕", url="t.me/{}?startgroup=true".format(bot.username)),  InlineKeyboardButton(text="🤖Make Own Admin Bot🤖", url="https://t.me/ShadowKing9o")],
                      [InlineKeyboardButton(text="👨‍💻Support Group👩‍💻", url="https://t.me/ShadowsArena"), InlineKeyboardButton(text="🎥Movie Adda🎥", url="https://t.me/+9Zhp_GdQVctiNjc1")],
                      [InlineKeyboardButton(text="🎬Youtube Channel🎬", url="https://youtube.com/channel/UCqVIzF-2AhO_pY4uo8Rr5Hg"), InlineKeyboardButton(text="🛠Help🛠", url="https://t.me/{}?start=help".format(bot.username)) ]]))
 
